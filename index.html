@@ -4,16 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="" rel="stylesheet">  
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
-</head>
-<body>
-
-    <header>
-        
-        <div class="min-h-screen bg-white-pure">
-
-  <style>
+    
+     <style>
     :root {
       --color1: #45bed9;
       --color2: #34acc7;
@@ -53,23 +45,34 @@
     }
   </style>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <header>
+        
+        <div class="min-h-screen bg-white-pure">
+
+ 
+
   <nav class="flex px-4 bg-color5 text-white-pure border-b md:shadow-lg items-center relative">
     <div class="text-lg font-bold md:py-0 py-4">
       Logo
     </div>
     <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0  md:bg-transparent">
       <li>
-        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-color2 hover:text-white-pure rounded">
+        <a href="#" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
           <span>Home</span>
         </a>
       </li>
       <li>
-        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-color2 hover:text-white-pure rounded">
+        <a href="#" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
           <span>Products</span>
         </a>
       </li>
       <li class="relative parent">
-        <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-color2 hover:text-white-pure rounded space-x-2">
+        <a href="#" class="flex justify-between md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded space-x-2">
           <span>Service</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
             <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
@@ -77,24 +80,24 @@
         </a>
         <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white-pure md:shadow-lg md:rounded-b">
           <li>
-            <a href="#" class="flex px-4 py-3 hover:bg-color4 rounded text-dark">
+            <a href="#" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark">
               Web development
             </a>
           </li>
           <li>
-            <a href="#" class="flex px-4 py-3 hover:bg-color4 rounded text-dark">
+            <a href="#" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark">
               Web Design
             </a>
           </li>
           <li>
-            <a href="#" class="flex px-4 py-3 hover:bg-color4 rounded text-dark">
+            <a href="#" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark">
               Machine Learning
             </a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-color2 hover:text-white-pure rounded">
+        <a href="#" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
           <span>About us</span>
         </a>
       </li>
