@@ -5,175 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="./src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="Styles/styles.css">
-    
+    <link href="src/output.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-<!--<style>
-    :root {
-      --color1: #45bed9;
-      --color2: #34acc7;
-      --color3: #239ab5;
-      --color4: #1188a2;
-      --color5: #007690;
-      --pure-white: #ffffff;
-      --text-dark: #03303f; /* Un gris muy oscuro para buen contraste en fondos claros */
-    }
-    .bg-color1 { background-color: var(--color1); }
-    .bg-color2 { background-color: var(--color2); }
-    .bg-color3 { background-color: var(--color3); }
-    .bg-color4 { background-color: var(--color4); }
-    .bg-color5 { background-color: var(--color5); }
-    .text-color1 { color: var(--color1); }
-    .text-color2 { color: var(--color2); }
-    .text-color3 { color: var(--color3); }
-    .text-color4 { color: var(--color4); }
-    .text-color5 { color: var(--color5); }
-    .bg-white-pure { background-color: var(--pure-white); }
-    .text-white-pure { color: var(--pure-white); }
-    .text-dark { color: var(--text-dark); }
-
-    @media only screen and (min-width: 768px) {
-      .parent:hover .child {
-        opacity: 1;
-        height: auto;
-        overflow: visible;
-        transform: translateY(0);
-      }
-      .child {
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        transform: translateY(-10%);
-      }
-    }
-</style>-->
-
-    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
+
 <body>
 
-  <header class="flex flex-col justify-center ">
-        
-  <nav class="flex px-4 bg-color5 text-white-pure   md:shadow-lg items-center relative">
-    <div class="text-lg font-bold md:py-0 py-4">
-      Logo
-    </div>
-    <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0  md:bg-transparent">
-      <li>
-        <a href="#" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white-pure rounded">
-          <span>Home</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white-pure rounded">
-          <span>Products</span>
-        </a>
-      </li>
-      <li class="relative parent">
-        <a href="#" class="flex justify-between md:inline-flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white-pure rounded space-x-2">
-          <span>Service</span>
-        </a>
-        <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white-pure md:shadow-lg md:rounded-b">
-          <li>
-            <a href="#" class="flex px-4 py-3 bg-white-pure hover:bg-color3 rounded text-dark">
-              Web development
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
-              Web Design
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
-              Machine Learning
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white rounded">
-          <span>About us</span>
-        </a>
-      </li>
-    </ul>
-    <div class="ml-auto md:hidden text-white-pure cursor-pointer">
-      <svg class="hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg><svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-      </svg>   
-  </nav>
+<header class="flex flex-col justify-center">
+  
+  <div class="bg-white-pure">
 
- 
-      <!--Slogan-->
-      <div class="flex flex-col items-center justify-center min-h-screen bg-white px-4">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight max-w-4xl fade-in-up text-dark">
-        Todo lo que Necesitas Saber sobre
-        <span class="bg-gradient-to-tr from-color1 via-color3 to-dark bg-clip-text text-transparent hover:scale-110 transition-transform duration-300 inline-block">
-          IA
-        </span>,
-        en un Solo Sitio
-      </h1>
-      <button class="m-10 rounded w-24 p-2 font-semibold cursor-pointer bg-color2 hover:bg-color3 text-white" type="button">
-       Ver más
-      </button>
- 
-      
-      </div>
-
-<header>
-
-  <div class="min-h-screen bg-white-pure">
-
+    <!-- Nav -->
     <nav class="flex px-4 bg-color5 text-white-pure border-b md:shadow-lg items-center relative">
 
       <div class="text-lg font-bold md:py-0 py-4">Logo</div>
 
-      <ul id="NAV" class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0  md:bg-transparent colapsar">
-        <li>
-          <a href="#" id="Home" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" id="Products" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
-            <span>Products</span>
-          </a>
-        </li>
-        <li class="relative parent">
-          <a href="#" id="Service" class="flex justify-between md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded space-x-2">
-            <span>Service</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
-              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
-            </svg>
-          </a>
-      <ul id="SubService" class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white-pure md:shadow-lg md:rounded-b hidden">
-        <li>
-          <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
-            Web development
-          </a>
-        </li>
-        <li>
-          <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
-            Web Design
-          </a>
-        </li>
-        <li>
-          <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
-            Machine Learning
-          </a>
-        </li>
-      </ul>
-        </li>
-        <li>
-          <a href="#" id="AboutUs" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
-            <span>About us</span>
-          </a>
-        </li>
-      </ul>
+        <ul id="NAV" class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0  md:bg-transparent colapsar">
+          <li>
+            <a href="#" id="Home" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="Products" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
+              <span>Products</span>
+            </a>
+          </li>
+          <li class="relative parent">
+            <a href="#" id="Service" class="flex justify-between md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded space-x-2">
+              <span>Service</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+              </svg>
+            </a>
+
+          <ul id="SubService" class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white-pure md:shadow-lg md:rounded-b hidden">
+            <li>
+              <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
+                Web development
+              </a>
+            </li>
+            <li>
+              <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
+                Web Design
+              </a>
+            </li>
+            <li>
+              <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
+                Machine Learning
+              </a>
+            </li>
+          </ul>
+            </li>
+            <li>
+              <a href="#" id="AboutUs" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
+                <span>About us</span>
+              </a>
+            </li>
+        </ul>
 
       <div class="ml-auto md:hidden text-white-pure cursor-pointer">
         <svg id="NavX" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -185,29 +76,42 @@
         </svg>
       </div>
     </nav>
-
   </div>
 
-    </header>
+  <!--Slogan-->
+  <div class="flex flex-col items-center justify-center min-h-screen bg-white px-4">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight max-w-4xl fade-in-up text-dark">
+      Todo lo que Necesitas Saber sobre
+      <span class="bg-gradient-to-tr from-color1 via-color3 to-dark bg-clip-text text-transparent hover:scale-110 transition-transform duration-300 inline-block">
+        IA
+      </span>,
+        en un Solo Sitio
+    </h1>
+    <button class="m-10 rounded w-24 p-2 font-semibold cursor-pointer bg-color2 hover:bg-color3 text-white" type="button">
+      Ver más
+    </button>     
+  </div>
 
-    <main>
-        <p>
-            Paginas articulos(GRID)
-        </p>
+</header>
 
-        <p>
-            Pagina Categorias
-        </p>
-    </main>
+  <main>
+      <p>
+        Paginas articulos(GRID)
+      </p>
 
-    <aside>
-        <p>form de contacto</p>
-    </aside>
+      <p>
+        Pagina Categorias
+      </p>
+  </main>
 
-    <footer>
-        <p>footer</p>
-    </footer>
+  <aside>
+    <p>form de contacto</p>
+  </aside>
 
-    <script src="JavaScript.js"></script>
+  <footer>
+    <p>footer</p>
+  </footer>
+
+  <script src="JavaScript.js"></script>
 </body> 
 </html>
