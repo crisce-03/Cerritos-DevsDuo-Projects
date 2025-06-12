@@ -13,73 +13,102 @@
 
 <body>
 
-<header class="flex flex-col justify-center">
-  
-  <div class="bg-white-pure">
+<header class="flex flex-col">
 
-    <!-- Nav -->
-    <nav class="flex px-4 bg-color5 text-white-pure border-b md:shadow-lg items-center relative">
+  <!-- NAV PARA PANTALLAS GRANDES -->
+  <nav class="hidden md:flex justify-between items-center  bg-color5 text-white-pure shadow">
+    <div class="text-lg font-bold px-4">Logo</div>
+    <ul class="flex space-x-6">
+      <li><a href="#" id="Home" class="flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white rounded"><span>Home</span></a></li>
+      <li><a href="#" id="Products" class="flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white rounded"><span>Products</span></a></li>
+     <li class="relative group">
+  <a href="#" id="Service" class="flex p-4 justify-between items-center bg-color5 hover:bg-color3 hover:text-white rounded">
+    <span>Service</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+      <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+    </svg>
+  </a>
 
-      <div class="text-lg font-bold md:py-0 py-4">Logo</div>
+  <ul id="SubService" class="transition duration-300 hidden group-hover:flex flex-col md:absolute top-full right-0 md:w-48 bg-white-pure md:shadow-lg md:rounded-b z-50">
+    <li>
+      <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
+        Web development
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
+        Web Design
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
+        Machine Learning
+      </a>
+    </li>
+  </ul>
+</li>
 
-        <ul id="NAV" class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0  md:bg-transparent colapsar">
-          <li>
-            <a href="#" id="Home" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" id="Products" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
-              <span>Products</span>
-            </a>
-          </li>
-          <li class="relative parent">
-            <a href="#" id="Service" class="flex justify-between md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded space-x-2">
-              <span>Service</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
-                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
-              </svg>
-            </a>
+      <li><a href="#" id="AboutUs" class="flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white rounded"><span>About us</span></a></li>
+    </ul>
+  </nav>
 
-          <ul id="SubService" class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white-pure md:shadow-lg md:rounded-b hidden">
-            <li>
-              <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
-                Web development
-              </a>
-            </li>
-            <li>
-              <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
-                Web Design
-              </a>
-            </li>
-            <li>
-              <a href="#" id="ServiceHover" class="flex px-4 py-3 bg-white-pure hover:bg-[var(--color3)] rounded text-dark ">
-                Machine Learning
-              </a>
-            </li>
-          </ul>
-            </li>
-            <li>
-              <a href="#" id="AboutUs" class="flex md:inline-flex p-4 items-center bg-color5 hover:bg-[var(--color3)] hover:text-white-pure rounded">
-                <span>About us</span>
-              </a>
-            </li>
-        </ul>
+  <!-- NAV PARA PANTALLAS MÓVILES -->
+  <nav class="flex md:hidden flex-col bg-color5 text-white-pure px-4 py-4 relative">
+    <div class="flex justify-between items-center">
+      <div class="text-lg font-bold">Logo</div>
+        <!-- Ícono de menú -->
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>            
+    </div>
 
-      <div class="ml-auto md:hidden text-white-pure cursor-pointer">
-        <svg id="NavX" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-        </svg>
-
-        <svg id="NavShow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="hidden size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-color5 text-white transform translate-x-full transition-transform duration-300 z-50">
+        <div class="flex justify-between items-center p-4 border-b border-white">
+        <span class="text-xl font-bold">Menú</span>
+        <!-- Ícono de cerrar -->
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </div>
-    </nav>
-  </div>
+    <ul >
+      <li><a href="#" id="Home" class="flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white rounded"><span>Home</span></a></li>
+      <li><a href="#" id="Products" class="flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white rounded"><span>Products</span></a></li>
+      <li class="relative group">
+  <a href="#" id="serviceMovil" class="flex p-4 justify-between items-center bg-color5 hover:bg-color3 hover:text-white rounded">
+    <span>Service</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+      <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+    </svg>
+  </a>
+
+  <ul id="subServiceMovil" class=" hidden flex-col  top-full right-0  bg-white">
+    <li>
+      <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
+        Web development
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
+        Web Design
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex px-4 py-3 bg-white hover:bg-color3 rounded text-dark">
+        Machine Learning
+      </a>
+    </li>
+  </ul>
+</li>
+
+      <li><a href="#" id="AboutUs" class="flex p-4 items-center bg-color5 hover:bg-color3 hover:text-white rounded"><span>About us</span></a></li>
+    </ul>
+    </div>
+  </nav>
+
 
   <!--Slogan-->
-  <div class="flex flex-col items-center justify-center min-h-screen bg-white px-4">
+
+    <div class="flex-1 flex flex-col my-12 items-center justify-center px-4 min-h-screen">
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight max-w-4xl fade-in-up text-dark">
       Todo lo que Necesitas Saber sobre
       <span class="bg-gradient-to-tr from-color1 via-color3 to-dark bg-clip-text text-transparent hover:scale-110 transition-transform duration-300 inline-block">
@@ -90,11 +119,14 @@
     <button class="m-10 rounded w-24 p-2 font-semibold cursor-pointer bg-color2 hover:bg-color3 text-white" type="button">
       Ver más
     </button>     
-  </div>
+    </div>
+
 
 </header>
 
   <main>
+
+
       <p>
         Paginas articulos(GRID)
       </p>
